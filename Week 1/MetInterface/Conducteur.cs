@@ -11,6 +11,7 @@ namespace Conducteur
 
         private string[] route;
 
+        // als argument voor de conducteur geef je een array mee
         public Conducteur(string[] route)
         {
             this.route = route;

@@ -12,6 +12,7 @@ namespace Conducteur
         public string NaarLocatie { get; private set; }
         public DateTime Datum { get; private set; }
 
+        // constructor van je klasse - tussen de haakjes staan je argumenten - andere naam gebruiken dan die van de variabelen
         public EnkelTicket(string vanLocatie, string naarLocatie, DateTime datum)
         {
             VanLocatie = vanLocatie;

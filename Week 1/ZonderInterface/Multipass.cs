@@ -11,6 +11,8 @@ namespace Conducteur
     {
         public string VanLocatie { get; private set; }
         public string NaarLocatie { get; private set; }
+        
+        //je hebt hier een list gemaakt van het type "Class = Rit"
         public List<Rit> Ritten { get; private set; }
         
         public Multipass(string vanLocatie, string naarLocatie)
@@ -22,7 +24,7 @@ namespace Conducteur
         public bool RitToevoegen(string naarLocatie)
         {
             if (Ritten.Count < 10)
-            {
+            {// ritten toevoegen aan je List - omdat je met een klasse werkt moet je daar "new Rit" aan toevoegen
                 Ritten.Add(new Rit(naarLocatie));
                 return true;
             }
